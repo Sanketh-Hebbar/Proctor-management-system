@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="message.css">
+    <title>Send Message</title>
+</head>
+<body>
+    
+    <div class="container">
+  <form method="post" action="/SendMessage">
+    <div class="row">
+      <div class="col-25">
+        <label for="ph">Mobile Number</label>
+      </div>
+      <div class="col-75">
+        <input type="tel" id="ph" name="ph" pattern="[0-9]{10}" required>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Message</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Less than 160 characters" style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+    {{#mesg}}
+    <h4>Message Sent Successfully</h4>
+    {{/mesg}}
+  </form>
+</div>
+    
+</body>
+</html>

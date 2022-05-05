@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Poppins:wght@300&display=swap');
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+ 
+.container {
+    border-radius: 5px;
+    background: linear-gradient(#fd8963,#eeb1679f);
+    padding: 20px;    
+    font-size: large;
+}
+.mybt{
+    background-color: black;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 16px;
+
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.mybt:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+

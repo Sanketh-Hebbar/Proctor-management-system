@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SJBIT</title>
+<link rel="stylesheet" type="text/css" href="showta.css"
+</head>
+<body>
+    
+	
+	
+	<center>
+		<form >
+			<center>
+				<h2>STUDENT MARKS AND ATTENDANCE</h2>
+                <h4>FINAL MARKS SHEET</h4>
+                <h4>USN : {{usn}}</h4>
+			</center>
+			<fieldset>
+                    <br><br>
+                    <table 
+                 width="50%" >
+
+                    <tr>
+                        <th>SUBCODE</th>
+                        <th>IA1</th>
+                        <th>ATTENDANCE1</th>
+                        
+
+
+                    </tr>
+{{#data1}}
+                    <tr>
+                        <th>SUBJECT1</th>
+                        <th><input type="text" id="sub1t1" name="sub1t1" value="{{s1t1}}"></th>
+                        <th><input type="text" id="sub1a1" name="sub1a1"  value="{{s1a1}}"></th>
+                        
+                        
+</tr>
+<tr>
+                        <th>SUBJECT2</th>
+                        <th><input type="text" id="sub2t1" name="sub2t1" value="{{s2t1}}"></th>
+                        <th><input type="text" id="sub2a1" name="sub2a1"  value="{{s2a1}}"></th>
+                       
+                        
+</tr>          
+<tr>
+                        <th>SUBJECT3</th>
+                        <th><input type="text" id="sub3t1" name="sub3t1" value="{{s3t1}}"></th>
+                        <th><input type="text" id="sub3a1" name="sub3a1" value="{{s3a1}}"></th>
+                        
+</tr>    
+<tr>
+                        <th>SUBJECT4</th>
+                        <th><input type="text" id="sub4t1" name="sub4t1" value="{{s4t1}}"></th>
+                        <th><input type="text" id="sub4a1" name="sub4a1" value="{{s4a1}}" ></th>
+                       
+</tr>
+<tr>
+                        <th>SUBJECT5</th>
+                        <th><input type="text" id="sub5t1" name="sub5t1" value="{{s5t1}}"></th>
+                        <th><input type="text" id="sub5a1" name="sub5a1"  value="{{s5a1}}"></th>
+                        
+                        
+</tr>
+<tr>
+                        <th>SUBJECT6</th>
+                        <th><input type="text" id="sub6t1" name="sub6t1" value="{{s6t1}}"></th>
+                        <th><input type="text" id="sub6a1" name="sub6a1"  value="{{s6a1}}"></th>
+                        
+                        
+</tr>
+<tr>
+                        <th>SUBJECT7</th>
+                        <th><input type="text" id="sub7t1" name="sub7t1" value="{{s7t1}}"></th>
+                        <th><input type="text" id="sub7a1" name="sub7a1"  value="{{s7a1}}"></th>
+                        
+                        
+</tr>
+<tr>
+                        <th>SUBJECT8</th>
+                        <th><input type="text" id="sub8t1" name="sub8t1" value="{{s8t1}}"></th>
+                        <th><input type="text" id="sub8a1" name="sub8a1"  value="{{s8a1}}"></th>
+                       
+                        
+</tr>
+<tr>
+                        <th>SUBJECT9</th>
+                        <th><input type="text" id="sub9t1" name="sub9t1" value="{{s9t1}}"></th>
+                        <th><input type="text" id="sub9a1" name="sub9a1"  value="{{s9a1}}"></th>
+                        
+                        
+</tr> 
+{{/data1}}
+</table><br>   
+<table 
+width="50%" >
+
+   <tr>
+       <th>SUBCODE</th>
+       <th>IA2</th>
+       <th>ATTENDANCE2</th>
+       
+{{#data2}}
+
+   </tr>
+
+   <tr>
+       <th>SUBJECT1</th>
+       <th><input type="text" id="sub1t2" name="sub1t2" value="{{s1t2}}"></th>
+       <th><input type="text" id="sub1a2" name="sub1a2"  value="{{s1a2}}"></th>
+       
+       
+</tr>
+<tr>
+       <th>SUBJECT2</th>
+       <th><input type="text" id="sub2t2" name="sub2t2" value="{{s2t2}}"></th>
+       <th><input type="text" id="sub2a2" name="sub2a2"  value="{{s2a2}}"></th>
+      
+       
+</tr>          
+<tr>
+       <th>SUBJECT3</th>
+       <th><input type="text" id="sub3t2" name="sub3t2" value="{{s3t2}}"></th>
+       <th><input type="text" id="sub3a2" name="sub3a2"  value="{{s3a2}}"></th>
+       
+</tr>    
+<tr>
+       <th>SUBJECT4</th>
+       <th><input type="text" id="sub4t2" name="sub4t2" value="{{s4t2}}"></th>
+       <th><input type="text" id="sub4a2" name="sub4a2" value="{{s4a2}}"></th>
+      
+</tr>
+<tr>
+       <th>SUBJECT5</th>
+       <th><input type="text" id="sub5t2" name="sub5t2" value="{{s5t2}}"></th>
+       <th><input type="text" id="sub5a2" name="sub5a2"  value="{{s5a2}}"></th>
+       
+       
+</tr>
+<tr>
+       <th>SUBJECT6</th>
+       <th><input type="text" id="sub6t2" name="sub6t2" value="{{s6t2}}"></th>
+       <th><input type="text" id="sub6a2" name="sub6a2" value="{{s6a2}}"></th>
+       
+       
+</tr>
+<tr>
+       <th>SUBJECT7</th>
+       <th><input type="text" id="sub7t2" name="sub7t2" value="{{s7t2}}"></th>
+       <th><input type="text" id="sub7a2" name="sub7a2" value="{{s7a2}}"></th>
+       
+       
+</tr>
+<tr>
+       <th>SUBJECT8</th>
+       <th><input type="text" id="sub8t2" name="sub8t2" value="{{s8t2}}"></th>
+       <th><input type="text" id="sub8a2" name="sub8a2" value="{{s8a2}}"></th>
+      
+       
+</tr>
+<tr>
+       <th>SUBJECT9</th>
+       <th><input type="text" id="sub9t2" name="sub9t2" value="{{s9t2}}"></th>
+       <th><input type="text" id="sub9a2" name="sub9a2"  value="{{s9a2}}"></th>
+       
+       
+</tr> 
+{{/data2}}
+</table><br>   
+<table 
+                 width="50%" >
+
+                    <tr>
+                        <th>SUBCODE</th>
+                        <th>IA3</th>
+                        <th>ATTENDANCE3</th>
+                        
+{{#data3}}
+
+                    </tr>
+            
+                    <tr>
+                        <th>SUBJECT1</th>
+                        <th><input type="text" id="sub1t3" name="sub1t3" value="{{s1t3}}"></th>
+                        <th><input type="text" id="sub1a3" name="sub1a3"  value="{{s1a3}}"></th>
+                        
+                        
+</tr>
+<tr>
+                        <th>SUBJECT2</th>
+                        <th><input type="text" id="sub2t3" name="sub2t3" value="{{s2t3}}"></th>
+                        <th><input type="text" id="sub2a3" name="sub2a3"  value="{{s2a3}}"></th>
+                       
+                        
+</tr>          
+<tr>
+                        <th>SUBJECT3</th>
+                        <th><input type="text" id="sub3t3" name="sub3t3" value="{{s3t3}}"></th>
+                        <th><input type="text" id="sub3a3" name="sub3a3"  value="{{s3a3}}"></th>
+                        
+</tr>    
+<tr>
+                        <th>SUBJECT4</th>
+                        <th><input type="text" id="sub4t3" name="sub4t3" value="{{s4t3}}"></th>
+                        <th><input type="text" id="sub4a3" name="sub4a3" value="{{s4a3}}"></th>
+                       
+</tr>
+<tr>
+                        <th>SUBJECT5</th>
+                        <th><input type="text" id="sub5t3" name="sub5t3" value="{{s5t3}}"></th>
+                        <th><input type="text" id="sub5a3" name="sub5a3"  value="{{s5a3}}"></th>
+                        
+                        
+</tr>
+<tr>
+                        <th>SUBJECT6</th>
+                        <th><input type="text" id="sub6t3" name="sub6t3" value="{{s6t3}}"></th>
+                        <th><input type="text" id="sub6a3" name="sub6a3" value="{{s6a3}}"></th>
+                        
+                        
+</tr>
+<tr>
+                        <th>SUBJECT7</th>
+                        <th><input type="text" id="sub7t3" name="sub7t3" value="{{s7t3}}"></th>
+                        <th><input type="text" id="sub7a3" name="sub7a3" value="{{s7a3}}"></th>
+                        
+                        
+</tr>
+<tr>
+                        <th>SUBJECT8</th>
+                        <th><input type="text" id="sub8t3" name="sub8t3" value="{{s8t3}}"></th>
+                        <th><input type="text" id="sub8a3" name="sub8a3" value="{{s8a3}}"></th>
+                       
+                        
+</tr>
+<tr>
+                        <th>SUBJECT9</th>
+                        <th><input type="text" id="sub9t3" name="sub9t3" value="{{s9t3}}"></th>
+                        <th><input type="text" id="sub9a3" name="sub9a3"  value="{{s9a3}}"></th>
+                        
+                        
+</tr> 
+{{/data3}}
+</table><br>   
+                <table 
+                 width="50%" >
+
+                    <tr>
+                        <th>SUBCODE</th>
+                        <th>IA FINAL</th>
+                        <th>ATTENDANCE FINAL</th>
+                        <th>SEE MARKS</th>
+                        <th>TOTAL MARKS</th>
+                        <th>STATUS</th>                        
+
+
+                    </tr>
+{{#data4}}            
+                    <tr>
+                        <th>SUBJECT1</th>
+                        <th><input type="text" id="sub1tf" name="sub1tf" value="{{s1t4}}"></th>
+                        <th><input type="text" id="sub1af" name="sub1af"  value="{{s1a4}}"></th>
+                        <th><input type="text" id="sub1see" name="sub1see"  value="{{s1see}}"></th>
+                        <th><input type="text" id="sub1tot" name="sub1tot"  value="{{s1tm}}"></th>
+                        <th><input type="text" id="sub1pf" name="sub1pf"  value="{{s1stat}}"></th>
+                       
+                        
+</tr>
+<tr>
+    <th>SUBJECT2</th>
+    <th><input type="text" id="sub2tf" name="sub2tf" value="{{s2t4}}"></th>
+    <th><input type="text" id="sub2af" name="sub2af"  value="{{s2a4}}"></th>
+    <th><input type="text" id="sub2see" name="sub2see"  value="{{s2see}}"></th>
+    <th><input type="text" id="sub2tot" name="sub2tot"  value="{{s2tm}}"></th>
+    <th><input type="text" id="sub2pf" name="sub2pf"  value="{{s2stat}}"></th>
+   
+    
+</tr>
+<tr>
+    <th>SUBJECT3</th>
+    <th><input type="text" id="sub3tf" name="sub3tf" value="{{s3t4}}"></th>
+    <th><input type="text" id="sub3af" name="sub3af"  value="{{s3a4}}"></th>
+    <th><input type="text" id="sub3see" name="sub3see"  value="{{s3see}}"></th>
+    <th><input type="text" id="sub3tot" name="sub3tot" value="{{s3tm}}" ></th>
+    <th><input type="text" id="sub3pf" name="sub3pf" value="{{s3stat}}"></th>
+   
+    
+</tr>
+<tr>
+    <th>SUBJECT4</th>
+    <th><input type="text" id="sub4tf" name="sub4tf" value="{{s4t4}}"></th>
+    <th><input type="text" id="sub4af" name="sub4af"  value="{{s4a4}}"></th>
+    <th><input type="text" id="sub4see" name="sub4see"  value="{{s4see}}"></th>
+    <th><input type="text" id="sub4tot" name="sub4tot"  value="{{s4tm}}"></th>
+    <th><input type="text" id="sub4pf" name="sub4pf"  value="{{s4stat}}"></th>
+   
+    
+</tr>
+<tr>
+    <th>SUBJECT5</th>
+    <th><input type="text" id="sub5tf" name="sub5tf" value="{{s5t4}}"></th>
+    <th><input type="text" id="sub5af" name="sub5af"  value="{{s5a4}}"></th>
+    <th><input type="text" id="sub5see" name="sub5see" value="{{s5see}}" ></th>
+    <th><input type="text" id="sub5tot" name="sub5tot" value="{{s5tm}}" ></th>
+    <th><input type="text" id="sub5pf" name="sub5pf"  value="{{s5stat}}"></th>
+   
+    
+</tr>
+<tr>
+    <th>SUBJECT6</th>
+    <th><input type="text" id="sub6tf" name="sub6tf" value="{{s6t4}}"></th>
+    <th><input type="text" id="sub6af" name="sub6af" value="{{s6a4}}" ></th>
+    <th><input type="text" id="sub6see" name="sub6see"  value="{{s6see}}"></th>
+    <th><input type="text" id="sub6tot" name="sub6tot" value="{{s6tm}}" ></th>
+    <th><input type="text" id="sub6pf" name="sub6pf"  value="{{s6stat}}"></th>
+   
+    
+</tr>
+<tr>
+    <th>SUBJECT7</th>
+    <th><input type="text" id="sub7tf" name="sub7tf" value="{{s7t4}}"></th>
+    <th><input type="text" id="sub7af" name="sub7af"  value="{{s7a4}}"></th>
+    <th><input type="text" id="sub7see" name="sub7see" value="{{s7see}}" ></th>
+    <th><input type="text" id="sub7tot" name="sub7tot"  value="{{s7tm}}"></th>
+    <th><input type="text" id="sub7pf" name="sub7pf"  value="{{s7stat}}"></th>
+   
+    
+</tr>
+<tr>
+    <th>SUBJECT8</th>
+    <th><input type="text" id="subt8f" name="sub8tf" value="{{s8t4}}"></th>
+    <th><input type="text" id="sub8af" name="sub8af"  value="{{s8a4}}"></th>
+    <th><input type="text" id="sub8see" name="sub8see"  value="{{s8see}}"></th>
+    <th><input type="text" id="sub8tot" name="sub8tot"  value="{{s8tm}}"></th>
+    <th><input type="text" id="sub8pf" name="sub8pf"  value="{{s8stat}}"></th>
+   
+    
+</tr>
+<tr>
+    <th>SUBJECT9</th>
+    <th><input type="text" id="sub9tf" name="sub9tf" value="{{s9t4}}"></th>
+    <th><input type="text" id="sub9af" name="sub9af"  value="{{s9a4}}"></th>
+    <th><input type="text" id="sub9see" name="sub9see"  value="{{s9see}}"></th>
+    <th><input type="text" id="sub9tot" name="sub9tot"  value="{{s9tm}}"></th>
+    <th><input type="text" id="sub9pf" name="sub9pf"  value="{{s9stat}}"></th>
+   
+    
+</tr>
+{{/data4}}
+</table><br>
+{{#data4}}
+<label for="TOTALMARKS">TOTAL MARKS OBTAINED:</label>
+<input type="text" id="TOTALMARKS" name="TOTALMARKS" value="{{totalmarks}}">   
+
+&ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;
+<label for="PERCENTAGE">PERCENTAGE:</label>
+<input type="text" id="PERCENTAGE" name="PERCENTAGE"value="{{percentage}}" > 
+
+<br><br>
+				
+<label for="SGPA">SGPA:</label>
+<input type="text" id="SGPA" name="SGPA" value="{{sgpa}}">   
+
+&ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;
+<label for="CGPA">CGPA:</label>
+<input type="text" id="CGPA" name="CGPA" value="{{cgpa}}"> 
+
+<br><br>
+<label for="OP">OVERALL PERFORMANCE:</label>
+<input type="text" id="OP" name="OP" value="{{performance}}">   
+
+&ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;
+<label for="NB">NO OF BACKLOGS:</label>
+<input type="text" id="NB" name="NB" value="{{backlogs}}"> 
+
+<br><br>
+{{/data4}}           
+                
+                
+
+
+<span id="but">
+
+
+</div></form></center>
+</body>
+</html>

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+h1
+{
+ font-family: 'Catamaran', sans-serif;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 40px;
+ color: #ffffff;
+ background-color:#f7612f ;
+ border-style: double;
+ transform: translate(0px,-25px);
+
+
+}
+
+h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  color: #ffffff;
+  background-color:#fc8057 ;
+  border-style: double;
+}
+
+
+
+
+form
+{
+ font-family: Arial, Helvetica, sans-serif;
+ margin-top: 50px;
+ margin-bottom: 50px;
+ margin-left: 230px;
+ margin-right: 230px;
+ 
+ padding: 10px;   
+ border-style: ridge;
+ border-width: 5px 5px 5px 5px;
+ background-color: wheat;
+}
+
+html
+{
+    background: linear-gradient(#f8ba70,#ffb196);
+}
+
+#justform
+{   
+  font-size: large;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-left: 70px;
+    
+    
+    
+}
+
+h3{
+    text-align: center;
+}
+
+th,td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    
+}
+textarea{
+    resize: vertical; 
+}
+
+
+
+#but
+{
+    margin-left: 400px;
+    
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: rgb(250, 214, 181); 
+    color: black; 
+    border: 2px solid #eb9515;
+    border-radius: 10px;
+  }
+  
+  .button1:hover {
+    background-color: #eb9515;
+    color: white;
+  }
+  
+  .button2 {
+    background-color: rgb(184, 225, 252); 
+    color: black; 
+    border: 2px solid #008CBA;
+    border-radius: 10px;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+body{
+  font-family: poppins;
+ }

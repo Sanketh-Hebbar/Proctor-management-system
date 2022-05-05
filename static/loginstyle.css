@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400,500,600,700,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        padding: 15px;
+    }
+}
+
+.login {
+    width: 450px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff30;
+    backdrop-filter: blur(20px);
+    border: 2px solid #ffffff30;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px #303e5c69;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.login h1 {
+    color: #ffffff;
+    font-size: 3em;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.login h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -43%;
+    width: 20px;
+    height: 100%;
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+.login:hover h1::before {
+    top: 90%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transition: 0.4s cubic-bezier(1, 0, 0, 1);
+}
+
+.login input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #ffffff30;
+    background-color: #ffffff30;
+    color: #ffffff;
+    margin: 10px 0;
+    padding: 0 15px;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
+.login input:focus {
+    border-color: #fff;
+    transition: 0.4s;
+}
+
+.login input::placeholder {
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.login input:focus::placeholder {
+    opacity: 0;
+}
+
+.login button {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-size: 1.7em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #303e5c;
+    box-shadow: 0 10px 20px #303e5c69;
+    cursor: pointer;
+}
+
+.login a {
+    color: #ffffff;
+}

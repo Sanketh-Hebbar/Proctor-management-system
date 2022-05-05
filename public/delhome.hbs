@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tahomestyle.css">
+    <title>Delete Student</title>
+</head>
+<body>
+
+    <form action="/searchdel" method="post">
+             <label for="usn">USN:</label>&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;<br><br>
+                <input type="text" id="usn" name="usn" placeholder="University Serial Number" oninput="this.value = this.value.toUpperCase()" pattern="[0-9]{1}[a-z|A-Z]{2}[0-9]{2}[a-z|A-Z]{2}[0-9]{3}" required>
+           <br> <button  class="button button1" type="submit">Search</button>&ensp;&ensp;<div class="backbtn"><a href="/dashboard" style="text-decoration: none;">Dashboard</a></div>
+    </form><br>
+
+              {{#dsfd}}<h3>Student details are deleted</h3>{{/dsfd}}
+              {{#notdsfd}}<h3>No data present to delete</h3>{{/notdsfd}}
+              {{#test1}}<h3>Test 1 details are deleted</h3>{{/test1}}
+              {{#nottest1}}<h3>No data present to delete</h3>{{/nottest1}}
+              {{#test2}}<h3>Test 2 details are deleted</h3>{{/test2}}
+              {{#nottest2}}<h3>No data present to delete</h3>{{/nottest2}}
+              {{#test3}}<h3>Test 3 details are deleted</h3>{{/test3}}
+              {{#nottest3}}<h3>No data present to delete</h3>{{/nottest3}}
+              {{#finalia}}<h3>Final IA details are deleted</h3>{{/finalia}}
+              {{#notfinalia}}<h3>No data present to delete</h3>{{/notfinalia}}
+
+    {{#checkmesg}}
+        <h2>USN not found or Student is not associated with the proctor</h2>
+    {{/checkmesg}}
+
+    {{#mesg}}
+        <div class="container">
+          <center>
+              <h4>USN :{{usn}}</h4>
+            <a href="/deldsfd?usn={{usn}}" class="buttong">Delete Student Form Details</a><br><br><br>
+            <a href="/deltest1?usn={{usn}}" class="buttong">Delete Test 1</a><br><br><br>
+            <a href="/deltest2?usn={{usn}}" class="buttong">Delete Test 2</a><br><br><br>
+            <a href="/deltest3?usn={{usn}}" class="buttong">Delete Test 3</a><br><br><br>
+            <a href="/delfinalia?usn={{usn}}" class="buttong">Delete Final IA</a><br><br><br>
+            </center>
+        </div>
+    
+    {{/mesg}}
+
+
+
+</body>
+</html>

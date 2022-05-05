@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tahomestyle.css">
+    <title>Marks and Attendance</title>
+</head>
+<body>
+
+    <button class="button button3"><a href="/shortage" style="text-decoration : none">Attendance Shortage List</a></button><br>
+
+ <form action="/search" method="post">
+             <label for="usn">USN:</label>&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;<br><br>
+                <input type="text" id="usn" name="usn" placeholder="University Serial Number" oninput="this.value = this.value.toUpperCase()" pattern="[0-9]{1}[a-z|A-Z]{2}[0-9]{2}[a-z|A-Z]{2}[0-9]{3}" required>
+           <br> <button  class="button button1" type="submit">Search</button>&ensp;&ensp;<div class="backbtn"><a href="/dashboard" style="text-decoration: none;">Dashboard</a></div>
+    </form><br>
+
+    {{#checkmesg}}
+        <h2>USN not found or Student is not associated with the proctor</h2>
+    {{/checkmesg}}
+
+    {{#mesg}}
+
+        <div class="container">
+          <center>
+            <a href="/test1?usn={{usn}}" class="buttong">Test 1</a><br><br><br>
+            <a href="/test2?usn={{usn}}" class="buttong">Test 2</a><br><br><br>
+            <a href="/test3?usn={{usn}}" class="buttong">Test 3</a><br><br><br>
+            <a href="/finalia?usn={{usn}}" class="buttong">Final IA</a><br><br><br>
+            <a href="/showtd?usn={{usn}}" class="buttong">Show Marks and Attendance</a>
+            </center>
+        </div>
+    </body>
+    {{/mesg}}
+
+
+</body>
+
+
+</html>

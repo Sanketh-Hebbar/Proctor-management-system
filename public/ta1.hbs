@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>TEST 1</title>
+<link rel="stylesheet" type="text/css" href="tastyle.css">
+</head>
+<body>
+    
+	
+	
+	<center>
+		<form action="/test1submit" method="post" autocomplete="on">
+			<center>
+				<h2>STUDENT MARKS AND ATTENDANCE</h2>
+
+                {{#checkmesg}}
+                <h2 style="color: blueviolet;">Data Already Present</h2>
+                {{/checkmesg}}
+
+                {{#mesg}}
+                <h2 style="color: blueviolet;">Data Inserted</h2>
+                {{/mesg}}
+                <h4>INTERNAL ASSESSMENT 1</h4>
+                <h4>USN : {{usn}}</h4>
+			</center>
+			<fieldset>
+                    <br><br>
+                <table 
+                 width="50%" >
+
+                    <tr>
+                        <th>SUBCODE</th>
+                        <th>IA1</th>
+                        <th>ATTENDANCE1</th>
+                        
+
+
+                    </tr>
+            
+                    <tr>
+                        <th>Subject 1</th>
+                        <th><input type="text" id="sub1t1" name="sub1t1" ></th>
+                        <th><input type="text" id="sub1a1" name="sub1a1"  ></th>
+                        
+                        
+</tr>
+<tr>
+                        <th>Subject 2</th>
+                        <th><input type="text" id="sub2t1" name="sub2t1" ></th>
+                        <th><input type="text" id="sub2a1" name="sub2a1"  ></th>
+                       
+                        
+</tr>          
+<tr>
+                        <th>Subject 3</th>
+                        <th><input type="text" id="sub3t1" name="sub3t1" ></th>
+                        <th><input type="text" id="sub3a1" name="sub3a1"  ></th>
+                        
+</tr>    
+<tr>
+                        <th>Subject 4</th>
+                        <th><input type="text" id="sub4t1" name="sub4t1" ></th>
+                        <th><input type="text" id="sub4a1" name="sub4a1"  ></th>
+                       
+</tr>
+<tr>
+                        <th>Subject 5</th>
+                        <th><input type="text" id="sub5t1" name="sub5t1" ></th>
+                        <th><input type="text" id="sub5a1" name="sub5a1"  ></th>
+                        
+                        
+</tr>
+<tr>
+                        <th>Subject 6</th>
+                        <th><input type="text" id="sub6t1" name="sub6t1" ></th>
+                        <th><input type="text" id="sub6a1" name="sub6a1"  ></th>
+                        
+                        
+</tr>
+<tr>
+                        <th>Subject 7</th>
+                        <th><input type="text" id="sub7t1" name="sub7t1" ></th>
+                        <th><input type="text" id="sub7a1" name="sub7a1"  ></th>
+                        
+                        
+</tr>
+<tr>
+                        <th>Subject 8</th>
+                        <th><input type="text" id="sub8t1" name="sub8t1" ></th>
+                        <th><input type="text" id="sub8a1" name="sub8a1"  ></th>
+                       
+                        
+</tr>
+<tr>
+                        <th>Subject 9</th>
+                        <th><input type="text" id="sub9t1" name="sub9t1" ></th>
+                        <th><input type="text" id="sub9a1" name="sub9a1"  ></th>
+                        
+                        
+</tr> 
+</table><br>   
+				
+
+            
+                
+                
+
+
+<span id="but">
+<center>
+<button  class="button button1" type="submit">Submit</button>&nbsp;&nbsp;
+<button class="button button2" type="reset">Reset</button></span>
+            </center>
+
+
+</div></form></centre>
+</body>
+</html>

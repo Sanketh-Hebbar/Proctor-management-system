@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Proctor login</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+
+<body>
+
+    <form class="login" action="/ploggedin" method="post">
+        <h1>Proctor Login</h1>
+        {{#if logfail}}
+        <h3>Proctor ID or Password is incorrect</h3>
+        {{/if}}
+        {{#if logout}}
+         Logout Successfull
+        {{/if}}
+
+        <input type="text" id="procid" name="procid" placeholder="Proctor ID" autocomplete="off" required>
+        <input type="password" id="procpass" name="procpass" placeholder="Password" autocomplete="off" required>
+
+        <button type="submit">Login</button>
+        <a href="/ProctorSignup">Signup</a>
+    </form>
+
+</body>
+{{#if logout}}
+    <script>
+    function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+    </script>
+{{/if}}
+
+
+</html>

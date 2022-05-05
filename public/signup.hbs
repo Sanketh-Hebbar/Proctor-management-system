@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proctor Signup</title>
+    <link rel="stylesheet" href="signupstyle.css">
+</head>
+
+<body>
+
+    <form class="login" action="/psignsubmit" method="post">
+        <h1>Proctor Signup</h1>
+        {{#if signmesg}}
+        <h3>Signup successfull !!, You can login now</h3>
+        {{/if}}
+
+
+        <input type="text" id="procname" name="procname" placeholder="Proctor Name" autocomplete="off" required>
+        <input type="email" id="procmail" name="procmail" placeholder="Proctor Email" required>
+        <input type="text" id="procid" name="procid" placeholder="Proctor ID" autocomplete="off" required>
+        <input type="password" id="procpass" name="procpass" placeholder="Password" autocomplete="off" required>
+
+        <button>Signup</button>
+        <a href="/Proctorlogin">Login</a>
+    </form>
+
+</body>
+
+</html>

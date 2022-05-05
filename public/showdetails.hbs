@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css"  href="showdetailstyle.css">
+
+<title>Student Details</title>
+</head>
+
+
+    <body>
+        {{#data3}}
+    
+        <form>
+           <div id="wholeform"> 
+            <h2 style="text-align:center">Student Details</h2>
+            <button type="button" class="mybt" ><a style="text-decoration:none" href="javascript:history.back(2)">Back</a></button>
+            
+            
+
+            <div id="justform"> <!---Add action attribute in form later-->
+
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" value="{{fname}}"  readonly required>   <!---name is used for backend languages like php when submitted -->
+
+                &ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" value="{{lname}}"  readonly required> 
+
+                <br><br>
+                <label for="usn">USN:</label>&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;
+                <input type="text" id="usn" name="usn" value="{{usn}}"  oninput="this.value = this.value.toUpperCase()" pattern="[0-9]{1}[a-z|A-Z]{2}[0-9]{2}[a-z|A-Z]{2}[0-9]{3}" readonly required>
+
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                <label for="dob">Date of birth:</label>
+                <input type="date" id="dob" name="dob" value="{{bdate}}" readonly required>
+
+                <br><br>
+                <label for="branch">Branch:</label>&ensp;&ensp;&ensp;&nbsp;
+                <input type="text" id="branch" name="branch" value="{{branch}}"  readonly required>
+
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                <label for="semester">Semester:</label>&nbsp;
+                <input type="number" id="semester" name="semester" value="{{sem}}" min="1" max="8" readonly required>
+
+                <br><br>
+                <label for="section">Section:</label>&ensp;&ensp;&ensp;
+                <input type="text" id="section" name="section" value="{{sec}}"  readonly required>
+
+
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp;
+                
+                <label for="contact_no">Mobile:</label>&nbsp;
+                <input type="tel" id="contact_no" name="contact_no" size="19" value="{{mob}}"  pattern="[0-9]{10}" readonly required>
+                <br><br>
+
+                
+                <label for="registeration_date">Registeration:</label>
+                <input type="date" id="registeration_date" name="registeration_date" value="{{regdate}}" readonly required>
+
+                &ensp;&ensp;&nbsp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                <label for="emailid">Email Id:</label>&nbsp;
+                <input type="email" id="emailid" name="emailid" size="19" value="{{email}}"  readonly required><br><br>
+
+                
+                <label for="address">Address:</label><br><br>
+                <textarea cols="80" rows="5" id="address" name="address"  readonly required>{{address}}</textarea>
+
+
+
+               <br><br>
+                <label for="Admitted_on">Admitted on:</label>
+
+                    <input type="radio" name="Admitted_on" checked readonly required>
+                    <label>{{adm}}</label>
+                    
+
+                &ensp;&ensp;
+                <label for="rank">Rank:</label>
+                <input type="text" id="rank" name="rank" size="15" value="{{rak}}"  readonly required>
+
+                &ensp;&ensp;
+                <label for="bloodgroup">Blood Group:</label>
+                    <select id="bloodgroup" name="bloodgroup">
+
+                        <option aria-readonly="true" value="{{bloodgrp}}">{{bloodgrp}}</option>
+                        
+
+                    </select>
+
+
+                
+
+                
+ 
+
+                <br><br>&ensp;
+                <label for="gender">Gender:</label>
+
+                    <input type="radio" name="gender" checked readonly required>
+                    <label>{{gender}}</label>
+                    
+                    
+
+                
+            
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                <label for="hosteler">Hosteler:</label>
+                    <input type="radio" name="hosteler" checked readonly required>
+                    <label>{{hostel}}</label>
+                    
+                
+
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                <label for="proctorid">Proctor:</label>
+                    <select id="proctorid" name="proctorid">
+
+                     <option aria-readonly="true" value="{{proct_id}}">{{proct_name}}</option>
+                        
+                    </select>   
+                
+
+               
+
+            
+
+            </div>
+
+                <br><br>
+                <table align="center" width="50%" >
+
+                    <tr>
+                        <th></th>
+                        <th>Board</th>
+                        <th>Name of the Institution</th>
+                        <th>Year of passing</th>
+                        <th>Class obtained</th>
+                        <th>Percentage in %</th>
+                    </tr>
+            
+                    <tr>
+                        <th>SSLC</th>
+                        <th><input type="text" id="sboard" name="sboard" value="{{sb}}" readonly required></th>
+                        <th><input type="text" id="sinstitution" name="sinstitution" value="{{si}}" readonly required></th>
+                        <th><input type="text" id="spassing_year" name="spassing_year" value="{{spass}}" readonly required></th>
+                        <th><input type="text" id="sClass_obtained" name="sClass_obtained" value="{{sclass}}" readonly required></th>
+                        <th><input type="text" id="sPercentage" name="sPercentage" value="{{sperc}}"  readonly required></th>
+                    </tr>
+            
+                    <tr>
+                        <th>PUC(12th):</th>
+                        <th><input type="text" id="pboard" name="pboard" value="{{pb}}"  readonly></th>
+                        <th><input type="text" id="pinstitution" name="pinstitution" value="{{pins}}"  readonly></th>
+                        <th><input type="text" id="ppassing_year" name="ppassing_year" value="{{ppass}}"  readonly></th>
+                        <th><input type="text" id="pClass_obtained" name="pClass_obtained" value="{{pclass}}"  readonly></th>
+                        <th><input type="text" id="pPercentage" name="pPercentage" value="{{pperc}}"  readonly></th>
+                    </tr>
+            
+                    <tr>
+                        <th>Diploma:</th>
+                        <th><input type="text" id="dboard" name="dboard" value="{{db}}"  readonly></th>
+                        <th><input type="text" id="dinstitution" name="dinstitution" value="{{di}}"  readonly></th>
+                        <th><input type="text" id="dpassing_year" name="dpassing_year" value="{{dpass}}"  readonly></th>
+                        <th><input type="text" id="dClass_obtained" name="dClass_obtained" value="{{dclass}}"  readonly></th>
+                        <th><input type="text" id="dPercentage" name="dPercentage" value="{{dperc}}"  readonly></th>
+                    </tr>
+
+                </table><br>
+                <h3><ins>Co- & Extra Curricular Activities</ins></h3>
+                <table align="center" width="50%">
+
+                    <tr>
+                        <th>Hobbies:</th>
+                        <th><input type="text" id="hobbies" name="hobbies" value="{{hobby}}"  size="115" readonly></th>
+                    </tr>
+                    <tr>
+                        <th>Extra Curricular Activities:</th>
+                        <th><textarea cols="107" rows="5" id="eca" name="eca"  readonly>{{ec}}</textarea>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Achievements:</th>
+                        <th><input type="text" id="achievements" name="achievements" value="{{achieve}}"  size="115" readonly></th>
+                    </tr>
+
+
+                </table>
+        
+
+        
+
+                <br><br>
+                <h2 style="text-align:center">Parent Details</h2>
+
+                
+                    <div id="secondform">
+
+                    <label for="father_name">Father Name:</label>
+                    <input type="text" id="father_name" name="father_name" value="{{fn}}"  readonly>
+                    <br><br>
+
+                    <label for="occupation">Occupation:</label>
+                    <input type="text" id="father_occupation" name="father_occupation" value="{{fo}}"  readonly><br><br>
+
+                    <label for="Father_Address">Address:</label><br><br>
+                    <textarea cols="60" rows="5" id="Father_Address" name="Father_Address"  readonly>{{fa}}</textarea><br><br>
+
+                    <label for="father_contact_no">Contact Number:</label>
+                    <input type="tel" id="father_contact_no" name="father_contact_no" value="{{fc}}"   readonly><br><br>
+
+                    <label for="father_emailid">Email Id:</label>
+                    <input type="email" id="father_emailid" name="father_emailid" value="{{fmail}}"  readonly><br><br>
+                    <hr style="height:2px;border-width:0;color:brown;background-color:brown">
+
+                    
+
+
+
+                    <label for="Mother_name">Mother Name:</label>
+                    <input type="text" id="Mother_name" name="Mother_name" value="{{mn}}"  readonly><br><br>
+
+                    <label for="mother_occupation">Occupation:</label>
+                    <input type="text" id="Mother_occupation" name="Mother_occupation" value="{{mo}}"  readonly><br><br>
+
+                    <label for="Mother_Address">Address:</label><br><br>
+                    <textarea cols="60" rows="5" id="Mother_Address" name="Mother_Address"  readonly>{{ma}}</textarea><br><br>
+
+                    <label for="Mother_contact_no">Contact Number:</label>
+                    <input type="tel" id="Mother_contact_no" name="Mother_contact_no" value="{{mc}}" readonly><br><br>
+
+                    <label for="Mother_emailid">Email Id:</label>
+                    <input type="email" id="Mother_emailid" name="Mother_emailid" value="{{me}}"  readonly><br><br>
+                    <hr style="height:2px;border-width:0;color:brown;background-color:brown">
+
+
+                    <label for="Guardian_name">Guardian Name:</label>
+                    <input type="text" id="Guardian_name" name="Guardian_name" value="{{gn}}"  readonly><br><br>
+
+                    <label for="Guardian_occupation">Occupation:</label>
+                    <input type="text" id="Guardian_occupation" name="Guardian_occupation" value="{{go}}"  readonly><br><br>
+
+                    <label for="Guardian_Address">Address:</label><br><br>
+                    <textarea cols="60" rows="5" id="Guardian_Address" name="Guardian_Address"  aria-readonly="true" >{{ga}}</textarea><br><br>
+
+                    <label for="Guardian_contact_no">Contact Number:</label>
+                    <input type="tel" id="Guardian_contact_no" name="Guardian_contact_no" value="{{gc}}" readonly><br><br>
+
+                    <label for="Guardian_emailid">Email Id:</label>
+                    <input type="email" id="Guardian_emailid" name="Guardian_emailid" value="{{ge}}" readonly><br><br>
+
+                </div>
+        </form>
+        
+            
+
+      </div> 
+
+        
+
+
+
+
+
+     {{/data3}}       
+    </body>
+
+
+
+
+</html>

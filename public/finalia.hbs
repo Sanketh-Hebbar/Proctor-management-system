@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SJBIT</title>
+<link rel="stylesheet" type="text/css" href="finaliastyle.css">
+
+</head>
+<body>
+    
+	
+	
+	<center>
+		<form action="/finaliasubmit" method="post" autocomplete="on">
+			<center>
+				<h2>STUDENT MARKS AND ATTENDANCE</h2>
+                {{#checkmesg}}
+                <h2 style="color: blueviolet;">Data Already Present</h2>
+                {{/checkmesg}}
+
+                {{#mesg}}
+                <h2 style="color: blueviolet;">Data Inserted</h2>
+                {{/mesg}}
+                <h4>FINAL MARKS SHEET</h4>
+                <h4>USN : {{usn}}</h4>
+			</center>
+			<fieldset>
+                    <br><br>
+                <table 
+                 width="50%" >
+
+                    <tr>
+                        <th>SUBCODE</th>
+                        <th>IA FINAL</th>
+                        <th>ATTENDANCE FINAL</th>
+                        <th>SEE MARKS</th>
+                        <th>TOTAL MARKS</th>
+                        <th>STATUS</th>                        
+
+
+                    </tr>
+            
+                    <tr>
+                        <th>SUBJECT1</th>
+                        <th><input type="text" id="sub1tf" name="sub1tf" ></th>
+                        <th><input type="text" id="sub1af" name="sub1af"  pattern="[0-9]*" title="Do not use %"></th>
+                        <th><input type="text" id="sub1see" name="sub1see"  ></th>
+                        <th><input type="text" id="sub1tot" name="sub1tot"  ></th>
+                        <th><input type="text" id="sub1pf" name="sub1pf"  ></th>
+                       
+                        
+</tr>
+<tr>
+    <th>SUBJECT2</th>
+    <th><input type="text" id="sub2tf" name="sub2tf" ></th>
+    <th><input type="text" id="sub2af" name="sub2af" pattern="[0-9]*" title="Do not use %" ></th>
+    <th><input type="text" id="sub2see" name="sub2see"  ></th>
+    <th><input type="text" id="sub2tot" name="sub2tot"  ></th>
+    <th><input type="text" id="sub2pf" name="sub2pf"  ></th>
+   
+    
+</tr>
+<tr>
+    <th>SUBJECT3</th>
+    <th><input type="text" id="sub3tf" name="sub3tf" ></th>
+    <th><input type="text" id="sub3af" name="sub3af"  pattern="[0-9]*" title="Do not use %"></th>
+    <th><input type="text" id="sub3see" name="sub3see"  ></th>
+    <th><input type="text" id="sub3tot" name="sub3tot"  ></th>
+    <th><input type="text" id="sub3pf" name="sub3pf"  ></th>
+   
+    
+</tr>
+<tr>
+    <th>SUBJECT4</th>
+    <th><input type="text" id="sub4tf" name="sub4tf" ></th>
+    <th><input type="text" id="sub4af" name="sub4af" pattern="[0-9]*" title="Do not use %"  ></th>
+    <th><input type="text" id="sub4see" name="sub4see"  ></th>
+    <th><input type="text" id="sub4tot" name="sub4tot"  ></th>
+    <th><input type="text" id="sub4pf" name="sub4pf"  ></th>
+   
+    
+</tr>
+<tr>
+    <th>SUBJECT5</th>
+    <th><input type="text" id="sub5tf" name="sub5tf" ></th>
+    <th><input type="text" id="sub5af" name="sub5af" pattern="[0-9]*" title="Do not use %" ></th>
+    <th><input type="text" id="sub5see" name="sub5see"  ></th>
+    <th><input type="text" id="sub5tot" name="sub5tot"  ></th>
+    <th><input type="text" id="sub5pf" name="sub5pf"  ></th>
+   
+    
+</tr>
+<tr>
+    <th>SUBJECT6</th>
+    <th><input type="text" id="sub6tf" name="sub6tf" ></th>
+    <th><input type="text" id="sub6af" name="sub6af" pattern="[0-9]*" title="Do not use %" ></th>
+    <th><input type="text" id="sub6see" name="sub6see"  ></th>
+    <th><input type="text" id="sub6tot" name="sub6tot"  ></th>
+    <th><input type="text" id="sub6pf" name="sub6pf"  ></th>
+   
+    
+</tr>
+<tr>
+    <th>SUBJECT7</th>
+    <th><input type="text" id="sub7tf" name="sub7tf" ></th>
+    <th><input type="text" id="sub7af" name="sub7af" pattern="[0-9]*" title="Do not use %" ></th>
+    <th><input type="text" id="sub7see" name="sub7see"  ></th>
+    <th><input type="text" id="sub7tot" name="sub7tot"  ></th>
+    <th><input type="text" id="sub7pf" name="sub7pf"  ></th>
+   
+    
+</tr>
+<tr>
+    <th>SUBJECT8</th>
+    <th><input type="text" id="subt8f" name="sub8tf" ></th>
+    <th><input type="text" id="sub8af" name="sub8af" pattern="[0-9]*" title="Do not use %"  ></th>
+    <th><input type="text" id="sub8see" name="sub8see"  ></th>
+    <th><input type="text" id="sub8tot" name="sub8tot"  ></th>
+    <th><input type="text" id="sub8pf" name="sub8pf"  ></th>
+   
+    
+</tr>
+<tr>
+    <th>SUBJECT9</th>
+    <th><input type="text" id="sub9tf" name="sub9tf" ></th>
+    <th><input type="text" id="sub9af" name="sub9af" pattern="[0-9]*" title="Do not use %" ></th>
+    <th><input type="text" id="sub9see" name="sub9see"  ></th>
+    <th><input type="text" id="sub9tot" name="sub9tot"  ></th>
+    <th><input type="text" id="sub9pf" name="sub9pf"  ></th>
+   
+    
+</tr>
+
+</table><br>
+
+<label for="TOTALMARKS">TOTAL MARKS OBTAINED:</label>
+<input type="text" id="TOTALMARKS" name="TOTALMARKS" placeholder="Enter Total Marks Out Of 900" >   
+
+&ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;
+<label for="PERCENTAGE">PERCENTAGE:</label>
+<input type="text" id="PERCENTAGE" name="PERCENTAGE" > 
+
+<br><br>
+				
+<label for="SGPA">SGPA:</label>
+<input type="text" id="SGPA" name="SGPA" >   
+
+&ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;
+<label for="CGPA">CGPA:</label>
+<input type="text" id="CGPA" name="CGPA" > 
+
+<br><br>
+<label for="OP">OVERALL PERFORMANCE:</label>
+<input type="text" id="OP" name="OP" >   
+
+&ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;
+<label for="NB">NO OF BACKLOGS:</label>
+<input type="text" id="NB" name="NB" > 
+
+<br><br>
+            
+                
+                
+
+
+<span id="but">
+<center>
+<button  class="button button1" type="submit">Submit</button>&nbsp;&nbsp;
+<button class="button button2" type="reset">Reset</button></span>
+            </center>
+
+
+</div></form></center>
+</body>
+
+</html>

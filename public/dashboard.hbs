@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="dashboard_style.css">
+
+    <title>Dashboard</title>
+
+</head>
+
+<body>
+    <header>
+        <a href="/"><img src="./sjbitlogo.png" alt="" class="logo"></a>
+        <nav>
+            <ul class="nav-area">
+                <li><h2>Welcome {{d1}}</h2></li>
+            </ul>
+        </nav>
+       
+        <a href="/logout" class="btn-area">logout</a>
+    </header>
+    
+
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn" class="myBtn">My Students</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>My Students</h1>
+
+    <table id="students">
+    <tr>
+        <th>NAME</th>
+        <th>USN</th>
+        <th>BRANCH</th>
+        <th>SEMESTER</th>
+        <th>SECTION</th>
+        <th>CONTACT</th>
+    </tr>
+    {{#data1}}
+    <tr>
+        <td>{{fname}}</td>
+        <td>{{usn}}</td>
+        <td>{{branch}}</td>
+        <td>{{sem}}</td>
+        <td>{{sec}}</td>
+        <td>{{mob}}</td>
+        <td><a href="/details?usn={{usn}}" style="color:#FF0000;">Full details</a></td>
+        <td><a href="/parentmsg?contact={{fc}}" style="color:#FF0000;">send parent message</a></td>
+    </tr>
+    {{/data1}}
+    
+    </table>
+     </div>
+
+    </div> 
+
+
+
+
+
+    
+    <div class="card"><div class="container"><h2><b><a href="/addst">Add Student</a></b></h2></div></div>  
+    <div class="card"><div class="container"><h2><b><a href="/del?proid={{proid}}&procpass={{procpass}}">Delete Student</a></b></h2></div></div>  
+    <div class="card"><div class="container"><h2><b><a href="/ta?proid={{proid}}&procpass={{procpass}}">Test Marks and Attendance</a></b></h2></div></div>  
+    <div class="card"><div class="container"><h2><b><a href="/msg">Send message</a></b></h2></div></div>  
+    <div class="card"><div class="container"><h2><b><a href="/meeting?proid={{proid}}&procpass={{procpass}}">Meeting</a></b></h2></div></div> 
+
+
+
+</body>
+
+<script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+</script>
+
+
+
+
+
+
+</html>

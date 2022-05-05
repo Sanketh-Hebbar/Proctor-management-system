@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="meetingstyle.css">
+    <title>Meeting</title>
+</head>
+<body>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn" class="myBtn">Meetings</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Meetings</h1>
+
+    <table id="students">
+    <tr>
+        <th>Meeting No</th>
+        <th>Details</th>
+    </tr>
+    {{#data5}}
+    <tr>
+        <td>{{meeting_no}}</td>
+        <td><a href="/meetingdetails?procid={{proc_id}}&meetno={{meeting_no}}" style="none">Details</a></td>
+    </tr>
+    {{/data5}}
+    
+    </table>
+     </div>
+
+    </div> 
+
+
+
+
+    <div class="container">
+        {{#checkmesg}}
+            <h3>Meeting Number Already Exists Please go back and refresh</h3>
+        {{/checkmesg}}
+        
+        <form action="/meetingsub?pro={{proid}}" method="post">
+                <label for="No">No:</label>&nbsp;
+                <input type="number" id="No" name="No" min="1"  required>
+                <br><br>
+                <label for="desc">Meeting Details</label>
+                <textarea id="desc" name="desc"  class="main" aria-setsize="2" placeholder="Add Meeting details" style="height:200px" required></textarea>
+                
+            <input type="submit" value="Add">
+
+        </form>
+        
+    </div><br><br>
+
+    <div id="content">
+    <a href="/dashboard">Dashboard</a>
+    </div>
+    
+    {{#mesg}}
+        <script>
+            location.replace(document.referrer);
+        </script>
+    {{/mesg}}
+    
+</body>
+
+
+<script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Details</title>
+    <link rel="stylesheet" href="meetingdetailsstyle.css">
+</head>
+<body>
+  {{#md}}
+  <div class="container">
+    <form>
+              
+                <pre><label for="No">No:</label>&nbsp;<input type="number" id="No" name="No" min="1" value="{{meeting_no}}" readonly required>                                                                                                                          <button type="button" class="mybt" ><a style="text-decoration:none" style="color:#FFFFFF;"href="/deletemd?procid={{proc_id}}&meetno={{meeting_no}}">Delete</a></button></pre>
+                <label for="desc">Meeting Details</label>
+                <textarea id="desc" name="desc"  class="main" aria-setsize="2" style="height:200px" readonly required>{{meeting_desc}}</textarea>
+                
+    </form>
+   {{/md}}
+   </div> <br><br>
+</body>
+</html>
